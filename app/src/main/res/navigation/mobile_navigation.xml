@@ -12,20 +12,20 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.laboratoriopersonal.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_results"
+        android:name="com.example.laboratoriopersonal.ui.results.ResultsFragment"
+        android:label="@string/menu_results"
+        tools:layout="@layout/fragment_results" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.laboratoriopersonal.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_browser"
+        android:name="com.example.laboratoriopersonal.ui.browser.BrowserFragment"
+        android:label="@string/menu_browser"
+        tools:layout="@layout/fragment_browser" />
 
     <fragment
         android:id="@+id/nav_profile"
-        android:name="com.example.laboratoriopersonal.ui.perfil.ProfileFragment"
+        android:name="com.example.laboratoriopersonal.ui.profile.ProfileFragment"
         android:label="@string/menu_profile"
         tools:layout="@layout/fragment_profile" />
 </navigation>

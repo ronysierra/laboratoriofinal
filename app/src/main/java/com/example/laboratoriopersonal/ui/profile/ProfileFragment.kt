@@ -1,4 +1,4 @@
-package com.example.laboratoriopersonal.ui.slideshow
+package com.example.laboratoriopersonal.ui.profile
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.laboratoriopersonal.databinding.FragmentSlideshowBinding
+import com.example.laboratoriopersonal.databinding.FragmentProfileBinding
 
-class SlideshowFragment : Fragment() {
+class ProfileFragment : Fragment() {
 
-private var _binding: FragmentSlideshowBinding? = null
+private var _binding: FragmentProfileBinding? = null
   // This property is only valid between onCreateView and
   // onDestroyView.
   private val binding get() = _binding!!
@@ -21,14 +21,14 @@ private var _binding: FragmentSlideshowBinding? = null
     container: ViewGroup?,
     savedInstanceState: Bundle?
   ): View {
-    val slideshowViewModel =
-            ViewModelProvider(this).get(SlideshowViewModel::class.java)
+    val profileViewModel =
+            ViewModelProvider(this).get(ProfileViewModel::class.java)
 
-    _binding = FragmentSlideshowBinding.inflate(inflater, container, false)
+    _binding = FragmentProfileBinding.inflate(inflater, container, false)
     val root: View = binding.root
 
-    val textView: TextView = binding.textSlideshow
-    slideshowViewModel.text.observe(viewLifecycleOwner) {
+    val textView: TextView = binding.textProfile
+    profileViewModel.text.observe(viewLifecycleOwner) {
       textView.text = it
     }
     return root
